@@ -9,8 +9,8 @@
     <ProjectGuid>{A9008B40-0564-4C5C-AD2C-3BEB42E11A09}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LitJsonMetro</RootNamespace>
-    <AssemblyName>LitJsonMetro</AssemblyName>
+    <RootNamespace>LitJson</RootNamespace>
+    <AssemblyName>LitJson</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
