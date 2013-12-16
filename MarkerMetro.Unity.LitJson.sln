@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LitJsonMetro", "LitJsonMetr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LitJsonWP8", "LitJsonWP8\LitJsonWP8.csproj", "{44D6BB6D-9A48-4B63-B464-0F56528A5D5D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4526A111-0021-4031-8335-68234161140F}"
+	ProjectSection(SolutionItems) = preProject
+		MarkerMetro.Unity.LitJson.NuSpec = MarkerMetro.Unity.LitJson.NuSpec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
