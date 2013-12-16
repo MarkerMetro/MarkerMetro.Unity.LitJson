@@ -10,7 +10,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright>Copyright MarkerMetro© 2013</copyright>
     <projectUrl>https://github.com/MarkerMetro/MarkerMetro.Unity.LitJson</projectUrl>
-    <dependencies/>
+    <dependencies>
+      <dependency id="MarkerMetro.Unity.WinLegacy"/>
+    </dependencies>
   </metadata>
   <files>
     <file src="MarkerMetro.Unity.LitJsonUnity\bin\Release\MarkerMetro.Unity.LitJson.dll" target="lib\net35\"/>
