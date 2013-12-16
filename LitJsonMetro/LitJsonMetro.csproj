@@ -139,6 +139,9 @@
       <HintPath>..\packages\MarkerMetro.Unity.WinLegacy.0.25\lib\netcore45\MarkerMetro.Unity.WinLegacy.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
