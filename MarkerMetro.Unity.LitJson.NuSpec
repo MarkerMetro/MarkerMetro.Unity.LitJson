@@ -15,8 +15,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="LitJsonUnity\bin\Release\MarkerMetro.Unity.LitJson.dll" target="lib\net35\"/>
-    <file src="LitJsonWP8\Bin\Release\MarkerMetro.Unity.LitJson.dll" target="lib\windowsphone8\"/>
-    <file src="LitJsonMetro\bin\Release\MarkerMetro.Unity.LitJson.dll" target="lib\netcore45\"/>
+    <file src="LitJsonUnity\bin\Release\LitJson.dll" target="lib\net35\"/>
+    <file src="LitJsonWP8\Bin\Release\LitJson.dll" target="lib\windowsphone8\"/>
+    <file src="LitJsonMetro\bin\Release\LitJson.dll" target="lib\netcore45\"/>
   </files>
 </package>
