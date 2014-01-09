@@ -30,9 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MarkerMetro.Unity.WinLegacy, Version=25.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="MarkerMetro.Unity.WinLegacy, Version=1.6.0.116, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\MarkerMetro.Unity.WinLegacy.0.25\lib\net35\MarkerMetro.Unity.WinLegacy.dll</HintPath>
+      <HintPath>..\packages\MarkerMetro.Unity.WinLegacy.1.6.0.116\lib\net35\MarkerMetro.Unity.WinLegacy.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
