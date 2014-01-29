@@ -358,6 +358,8 @@ namespace LitJson
 
                 if (inst_type.IsAssignableFrom (json_type))
                     return reader.Value;
+                if (inst_type == typeof(Single) && json_type==typeof(Double)) // special case
+                    return (Single)(Double)reader.Value;
 
                 // If there's a custom importer that fits, use it
                 if (custom_importers_table.ContainsKey (json_type) &&
@@ -746,6 +748,12 @@ namespace LitJson
 
             if (obj is Double) {
                 writer.Write ((double) obj);
+                return;
+            }
+
+            if (obj is Single)
+            {
+                writer.Write((float)obj);
                 return;
             }
 
