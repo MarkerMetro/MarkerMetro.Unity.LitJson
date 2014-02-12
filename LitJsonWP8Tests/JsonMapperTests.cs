@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace LitJsonWP8Tests
 {
@@ -131,5 +132,36 @@ namespace LitJsonWP8Tests
 
             Assert.IsTrue(deserialized != null);
         }
+
+        [TestMethod]
+        public void RecordManager_RoundTrip_ProperlyDeserializeFloats()
+        {
+            var target = new RecordData();
+            target.PlayerRecords.Add(new cPlayerRecord() { bestScoreMultiplierFromSecondChance = 3.14f });
+            var jsonData = LitJson.JsonMapper.ToJson(target);
+
+            var deserialized = LitJson.JsonMapper.ToObject<RecordData>(jsonData);
+
+            Assert.AreEqual(
+                target.PlayerRecords[0].bestScoreMultiplierFromSecondChance,
+                deserialized.PlayerRecords[0].bestScoreMultiplierFromSecondChance);
+        }
+
+        [TestMethod]
+        public void RecordManager_RoundTripWithCultureChange_ProperlyDeserializeFloats()
+        {
+            var target = new RecordData();
+            target.PlayerRecords.Add(new cPlayerRecord() { bestScoreMultiplierFromSecondChance = 3.14f });
+            var jsonData = LitJson.JsonMapper.ToJson(target);
+
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("fr-FR");
+
+            var deserialized = LitJson.JsonMapper.ToObject<RecordData>(jsonData);
+
+            Assert.AreEqual(
+                target.PlayerRecords[0].bestScoreMultiplierFromSecondChance,
+                deserialized.PlayerRecords[0].bestScoreMultiplierFromSecondChance);
+        }
+
     }
 }
