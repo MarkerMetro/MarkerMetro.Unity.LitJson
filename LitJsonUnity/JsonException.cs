@@ -14,12 +14,7 @@ using System;
 
 namespace LitJson
 {
-
-#if NETFX_CORE    
-    public class JsonException : MarkerMetro.Unity.WinLegacy.ApplicationException
-#else
-    public class JsonException : System.ApplicationException
-#endif
+    public class JsonException : System.Exception
     {
         public JsonException () : base ()
         {
