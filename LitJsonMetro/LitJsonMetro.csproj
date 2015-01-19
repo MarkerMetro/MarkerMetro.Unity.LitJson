@@ -136,7 +136,7 @@
   <ItemGroup>
     <Reference Include="MarkerMetro.Unity.WinLegacy, Version=1.6.0.116, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\MarkerMetro.Unity.WinLegacy.1.6.0.116\lib\netcore45\MarkerMetro.Unity.WinLegacy.dll</HintPath>
+      <HintPath>..\packages\MarkerMetro.Unity.WinLegacy.1.8.0.5\lib\netcore45\MarkerMetro.Unity.WinLegacy.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
