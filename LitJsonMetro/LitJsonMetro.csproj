@@ -104,6 +104,15 @@
     <Compile Include="..\LitJsonUnity\IJsonWrapper.cs">
       <Link>IJsonWrapper.cs</Link>
     </Compile>
+    <Compile Include="..\LitJsonUnity\LitJsonFX\IOrderedDictionary.cs">
+      <Link>LitJsonFX\IOrderedDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\LitJsonUnity\LitJsonFX\OrderedDictionary.cs">
+      <Link>LitJsonFX\OrderedDictionary.cs</Link>
+    </Compile>
+	<Compile Include="..\LitJsonUnity\LitJsonFX\ArrayList.cs">
+      <Link>LitJsonFX\ArrayList.cs</Link>
+    </Compile>
     <Compile Include="..\LitJsonUnity\JsonData.cs">
       <Link>JsonData.cs</Link>
     </Compile>
@@ -141,6 +150,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MarkerMetro.Unity.WinLegacy.dll" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

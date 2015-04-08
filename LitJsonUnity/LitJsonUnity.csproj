@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="MarkerMetro.Unity.WinLegacy">
       <HintPath>..\packages\MarkerMetro.Unity.WinLegacy.1.8.0.5\lib\net35\MarkerMetro.Unity.WinLegacy.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,6 +50,9 @@
     <Compile Include="JsonReader.cs" />
     <Compile Include="JsonWriter.cs" />
     <Compile Include="Lexer.cs" />
+    <Compile Include="LitJsonFX\ArrayList.cs" />
+    <Compile Include="LitJsonFX\IOrderedDictionary.cs" />
+    <Compile Include="LitJsonFX\OrderedDictionary.cs" />
     <Compile Include="ParserToken.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -13,7 +13,7 @@
 using System;
 using System.Collections;
 
-using MarkerMetro.Unity.WinLegacy.Collections.Specialized; 
+using LitJson.Collections.Specialized; 
 
 namespace LitJson
 {
