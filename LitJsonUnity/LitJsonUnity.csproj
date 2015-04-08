@@ -30,8 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MarkerMetro.Unity.WinLegacy">
-      <HintPath>..\packages\MarkerMetro.Unity.WinLegacy.1.8.0.5\lib\net35\MarkerMetro.Unity.WinLegacy.dll</HintPath>
+    <Reference Include="MarkerMetro.Unity.WinLegacy, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Unity\MarkerMetro.Unity.WinLegacy.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MarkerMetro.Unity.WinLegacy.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -22,7 +22,7 @@ using MarkerMetro.Unity.WinLegacy.Reflection;
 #if UNITY_EDITOR
 using LegacySystemCollections = System.Collections;
 #else
-using LegacySystemCollections = MarkerMetro.Unity.WinLegacy.Collections;
+using LegacySystemCollections = MarkerMetro.Unity.WinLegacy.Plugin.Collections;
 #endif
 
 using System.Collections; 
@@ -182,11 +182,7 @@ namespace LitJson
 
             data.IsArray = type.IsArray;
 
-#if WINDOWS_PHONE
-            if (type.GetInterface ("System.Collections.IList", false) != null)
-#else
             if (type.GetInterface("System.Collections.IList") != null)
-#endif
             { 
                 data.IsList = true;
             }
@@ -220,11 +216,7 @@ namespace LitJson
 
             ObjectMetadata data = new ObjectMetadata ();
 
-#if WINDOWS_PHONE
-            if (type.GetInterface ("System.Collections.IList", false) != null)
-#else
             if (type.GetInterface("System.Collections.IList") != null)
-#endif
             { 
                 data.IsDictionary = true;
             }
@@ -336,7 +328,7 @@ namespace LitJson
 
             if (reader.Token == JsonToken.Null) {
 
-#if (UNITY_EDITOR || WINDOWS_PHONE)
+#if (UNITY_EDITOR)
                 if (! inst_type.IsClass)
 #else
                 if (!inst_type.IsClass()) // MM modified from property to method to use extension method
