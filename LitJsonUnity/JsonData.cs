@@ -15,7 +15,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
-using MarkerMetro.Unity.WinLegacy.Collections.Specialized; 
+using LitJson.Collections.Specialized; 
 
 namespace LitJson
 {

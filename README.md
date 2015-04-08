@@ -1,7 +1,9 @@
 MarkerMetro.Unity.LitJson
 =========================
 
-Unity Editor (.Net 3.5), Windows 8.1 and Windows Phone 8 plugin libraries for LitJson https://github.com/lbv/litjson
+Unity Editor (.Net 3.5), Windows 8.1 plugin libraries for LitJson https://github.com/lbv/litjson
+
+Windows Phone 8.0 is no longer supported 
 
 Latest code taken from this commit:
 https://github.com/lbv/litjson/commit/89051bc46b52109550cb1422716e95f9c30400c8
@@ -13,8 +15,6 @@ Build the solution and copy the resultant dlls into the following folder structu
 MarkerMetro.Unity.LitJsonUnity Project > /Assets/Plugins/LitJson.dll
 
 MarkerMetro.Unity.LitJsonMetro Project > /Assets/Plugins/Metro/LitJson.dll
-
-MarkerMetro.Unity.LitJsonWP8 Project > /Assets/Plugins/WP8/LitJson.dll
 
 Note there is a dependency on https://github.com/MarkerMetro/MarkerMetro.Unity.WinLegacy
 
