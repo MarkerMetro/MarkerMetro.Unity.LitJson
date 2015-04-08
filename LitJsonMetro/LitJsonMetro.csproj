@@ -104,14 +104,14 @@
     <Compile Include="..\LitJsonUnity\IJsonWrapper.cs">
       <Link>IJsonWrapper.cs</Link>
     </Compile>
-    <Compile Include="..\LitJsonUnity\LitJsonFX\IOrderedDictionary.cs">
-      <Link>LitJsonFX\IOrderedDictionary.cs</Link>
+    <Compile Include="..\LitJsonUnity\Collections\IOrderedDictionary.cs">
+      <Link>Collections\IOrderedDictionary.cs</Link>
     </Compile>
-    <Compile Include="..\LitJsonUnity\LitJsonFX\OrderedDictionary.cs">
-      <Link>LitJsonFX\OrderedDictionary.cs</Link>
+    <Compile Include="..\LitJsonUnity\Collections\OrderedDictionary.cs">
+      <Link>Collections\OrderedDictionary.cs</Link>
     </Compile>
-	<Compile Include="..\LitJsonUnity\LitJsonFX\ArrayList.cs">
-      <Link>LitJsonFX\ArrayList.cs</Link>
+	<Compile Include="..\LitJsonUnity\Collections\ArrayList.cs">
+      <Link>Collections\ArrayList.cs</Link>
     </Compile>
     <Compile Include="..\LitJsonUnity\JsonData.cs">
       <Link>JsonData.cs</Link>

@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collections\ArrayList.cs" />
+    <Compile Include="Collections\IOrderedDictionary.cs" />
+    <Compile Include="Collections\OrderedDictionary.cs" />
     <Compile Include="IJsonWrapper.cs" />
     <Compile Include="JsonData.cs" />
     <Compile Include="JsonException.cs" />
@@ -50,9 +53,6 @@
     <Compile Include="JsonReader.cs" />
     <Compile Include="JsonWriter.cs" />
     <Compile Include="Lexer.cs" />
-    <Compile Include="LitJsonFX\ArrayList.cs" />
-    <Compile Include="LitJsonFX\IOrderedDictionary.cs" />
-    <Compile Include="LitJsonFX\OrderedDictionary.cs" />
     <Compile Include="ParserToken.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
