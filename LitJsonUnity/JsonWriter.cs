@@ -294,7 +294,10 @@ namespace LitJson
             ctx_stack.Push (context);
 
             if (inst_string_builder != null)
-                inst_string_builder.Remove (0, inst_string_builder.Length);
+            {
+                inst_string_builder.Length = 0;
+                inst_string_builder.Capacity = 16;
+            }
         }
 
         public void Write (bool boolean)
